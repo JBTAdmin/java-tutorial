@@ -2,8 +2,8 @@
 public class switch_statement {
 
     public static void main(String[] args) {
-        int weekday = 5;
-        String weekdayString = "FRIDAY";
+        int weekday = 6;
+        String weekdayString = "Friday";
         boolean isWeekend = false;
 
         switchIntMethod(weekday);
@@ -14,7 +14,7 @@ public class switch_statement {
     private static void switchStringMethod(String weekdayString) {
         {
             int weekdayInt;
-            switch (weekdayString) {
+            switch (weekdayString.toUpperCase()) {
                 case "SUNDAY":
                     weekdayInt = 1;
                     break;
