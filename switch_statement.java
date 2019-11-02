@@ -3,10 +3,44 @@ public class switch_statement {
 
     public static void main(String[] args) {
         int weekday = 5;
+        String weekdayString = "FRIDAY";
         boolean isWeekend = false;
 
-        SwitchIntMethod(weekday);
+        switchIntMethod(weekday);
+        switchStringMethod(weekdayString);
         switchBreakUse(isWeekend, weekday);
+    }
+
+    private static void switchStringMethod(String weekdayString) {
+        {
+            int weekdayInt;
+            switch (weekdayString) {
+                case "SUNDAY":
+                    weekdayInt = 1;
+                    break;
+                case "MONDAY":
+                    weekdayInt = 2;
+                    break;
+                default:
+                    weekdayInt = 0;
+                    break;
+                case "TUESDAY":
+                    weekdayInt = 3;
+                    break;
+                case "WEDNESDAY":
+                    weekdayInt = 4;
+                    break;
+                case "THURSDAY":
+                    weekdayInt = 5;
+                    break;
+                case "FRIDAY":
+                    weekdayInt = 6;
+                    break;
+                case "SATURDAY":
+                    weekdayInt = 7;
+            }
+            System.out.println(weekdayInt + " DAY OF THE WEEK");
+        }
     }
 
     private static void switchBreakUse(boolean isWeekend, int weekday) {
@@ -32,7 +66,7 @@ public class switch_statement {
         System.out.println("Is it Weekend ? " + isWeekend);
     }
 
-    private static void SwitchIntMethod(int weekday) {
+    private static void switchIntMethod(int weekday) {
         String weekdayString;// switch statement with int data type
         switch (weekday) {
             case 1:
