@@ -9,6 +9,21 @@ public class switch_statement {
         switchIntMethod(weekday);
         switchStringMethod(weekdayString);
         switchBreakUse(isWeekend, weekday);
+        switchExtendedVersion(weekday);
+    }
+
+    private static void switchExtendedVersion(int weekday) {
+        // Switch expression is used to assign the result value to local value
+        boolean isWeekend = switch (weekday) {
+            case 1, 7 -> true;
+            case 2, 3, 4, 5, 6 -> false;
+            /*
+             * Here default is mandated by compiler.
+             * As 'switch' expression needs to cover all possible values.
+             */
+            default -> throw new IllegalStateException("Unexpected value: " + weekday);
+        };
+        System.out.println("Is it Weekend ? " + isWeekend);
     }
 
     private static void switchStringMethod(String weekdayString) {
