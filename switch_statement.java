@@ -13,15 +13,19 @@ public class switch_statement {
     }
 
     private static void switchExtendedVersion(int weekday) {
-        // Switch expression is used to assign the result value to local value
+        // Switch expression is used to assign the result value to local variable
         boolean isWeekend = switch (weekday) {
-            case 1, 7 -> true;
-            case 2, 3, 4, 5, 6 -> false;
+            case 1, 7 -> {
+                System.out.println("Multiple statement evaluation test");
+                yield true;
+            }
             /*
              * Here default is mandated by compiler.
              * As 'switch' expression needs to cover all possible values.
              */
             default -> throw new IllegalStateException("Unexpected value: " + weekday);
+            case 2, 3, 4, 5, 6 -> false;
+            case 9 -> true;
         };
         System.out.println("Is it Weekend ? " + isWeekend);
     }
