@@ -28,19 +28,22 @@ public class for_loop {
 //            System.out.println("Infinite loop");
 //        }
 
-
         //enhanced for loop
         String[] array = {"Hello ", "Hi ", "How ", "are ", "you?"};
         List<String> list = Arrays.asList(array);
-        ;
+        int index = 0;
 
         for (String str : array) {
             System.out.print(str);
+            //Variable can be used to get index of the current item
+            System.out.println("Current Index :" + index++);
         }
         System.out.println("\n");
 
         for (String str : list) {
             System.out.print(str);
+            //Collection method indexOf can be used to get index of current item
+            System.out.println("Current Index: " + list.indexOf(str));
         }
     }
 }
