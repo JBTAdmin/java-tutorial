@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -19,7 +18,7 @@ public class for_loop {
         }
 
         /*
-         * Below two for statements are infinite loop hence commmented.
+         * Below two for statements are infinite loop hence commented.
          */
 //        for (; ; k++) {
 //            System.out.println("Value of k: " + k);
@@ -31,15 +30,16 @@ public class for_loop {
 
 
         //enhanced for loop
-        String[] array = {"Hello ","Hi ","How ","are ","you?"};
-        List<String> list = Arrays.asList(array);;
+        String[] array = {"Hello ", "Hi ", "How ", "are ", "you?"};
+        List<String> list = Arrays.asList(array);
+        ;
 
-        for (String str: array) {
+        for (String str : array) {
             System.out.print(str);
         }
         System.out.println("\n");
 
-        for (String str: list){
+        for (String str : list) {
             System.out.print(str);
         }
     }
