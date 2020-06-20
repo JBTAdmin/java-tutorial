@@ -1,4 +1,4 @@
-package com.jbt;
+package com.jbt.core;
 
 /**
  * @author JavaBeginnersTutorial

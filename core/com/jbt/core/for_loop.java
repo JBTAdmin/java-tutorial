@@ -1,4 +1,4 @@
-package com.jbt;
+package com.jbt.core;
 
 import java.util.Arrays;
 import java.util.List;
