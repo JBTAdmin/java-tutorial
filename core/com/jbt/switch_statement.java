@@ -1,3 +1,4 @@
+package com.jbt;
 
 public class switch_statement {
 

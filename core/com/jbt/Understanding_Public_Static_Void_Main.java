@@ -1,3 +1,5 @@
+package com.jbt;
+
 /**
  * @author JavaBeginnersTutorial
  * @see java.lang.String
